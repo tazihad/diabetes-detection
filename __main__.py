@@ -11,15 +11,15 @@ import streamlit as st
 
 st.write("""
 # Diabetes Detection
-Detect if someoneo has diabetes using machine learning and python!
+Detect if someone has diabetes using machine learning and python!
 """
 )
 # Open and display an image
-image = Image.open('/run/media/pulsar/LocalDisk/developments/ml-projects/diabetes-detection/diabetes detection app.png')
+image = Image.open("https://github.com/tazihad/diabetes-detection/raw/main/diabetes%20detection%20app.png")
 st.image(image, caption='ML', use_column_width=True)
 
 # Get the data
-df = pd.read_csv('/run/media/pulsar/LocalDisk/developments/ml-projects/diabetes-detection/diabetes.csv')
+df = pd.read_csv("https://raw.githubusercontent.com/tazihad/diabetes-detection/main/diabetes.csv")
 
 # Set a subheader
 st.subheader('Data information')
